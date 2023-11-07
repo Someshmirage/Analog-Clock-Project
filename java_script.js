@@ -20,5 +20,5 @@ function displayTime(){
 
 }
 
-setInterval(displayTime, 1000); //1000 mili sec mnje 1 sec
+setInterval(displayTime, 1000);
 
