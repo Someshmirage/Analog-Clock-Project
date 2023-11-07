@@ -1,0 +1,72 @@
+*{ /* all elements */
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+color: rgba(245, 245, 245, 0.886);
+}
+
+
+body{
+display: flex; /*clock for center*/
+justify-content: center; /*clock for horizontally center*/
+align-items: center; /*it for vertically center*/
+min-height: 100vh;
+background-color: rgba(0, 0, 0, 0.904);
+}
+
+.container{
+    position: relative;
+}
+
+.clock{ /*for clock circle*/
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /*for circle*/
+    background-color: rgba(255, 255, 255, 0.107);
+    border: 2px solid rgba(255, 255, 255, 0.311);
+    box-shadow: 0px 0px 30px rgba(199, 199, 0, 0.9);
+    display: flex;
+    justify-content: center; /*horizontally center*/
+    align-items: center; /* vertically center*/
+}
+
+.clock span{
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));  /*calc is inbuilt function which calculate the value*/
+                                     /*circle 360/ hours 12=30 rotation*/
+    inset: 12px;
+    text-align: center;
+
+}
+
+.clock span b{
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block; /* 1 to 12 no in one line*/
+    font-size: 20px;
+}
+
+.clock::before{  /* madhala dot sathi*/ 
+content: '';
+position: absolute;
+width: 8px;
+height: 8px;
+border-radius: 50%;
+background-color: rgba(255, 255, 255, 0.845);
+z-index: 2;  /*default 1 asto center madhe yenyasathi 2 kela*/
+}
+
+.hand{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hand i{
+position: absolute;
+background-color: var(--clr);
+width: 4px;
+height:var(--h);
+border-radius: 8px;
+}
