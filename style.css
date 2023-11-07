@@ -1,4 +1,4 @@
-*{ /* all elements */
+*{ 
 margin: 0;
 padding: 0;
 box-sizing: border-box;
@@ -22,7 +22,7 @@ background-color: rgba(0, 0, 0, 0.904);
 .clock{ /*for clock circle*/
     width: 300px;
     height: 300px;
-    border-radius: 50%; /*for circle*/
+    border-radius: 50%; 
     background-color: rgba(255, 255, 255, 0.107);
     border: 2px solid rgba(255, 255, 255, 0.311);
     box-shadow: 0px 0px 30px rgba(199, 199, 0, 0.9);
@@ -42,7 +42,7 @@ background-color: rgba(0, 0, 0, 0.904);
 
 .clock span b{
     transform: rotate(calc(-30deg * var(--i)));
-    display: inline-block; /* 1 to 12 no in one line*/
+    display: inline-block; 
     font-size: 20px;
 }
 
