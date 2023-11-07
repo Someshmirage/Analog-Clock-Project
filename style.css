@@ -8,9 +8,9 @@ color: rgba(245, 245, 245, 0.886);
 
 
 body{
-display: flex; /*clock for center*/
-justify-content: center; /*clock for horizontally center*/
-align-items: center; /*it for vertically center*/
+display: flex; 
+justify-content: center; 
+align-items: center; 
 min-height: 100vh;
 background-color: rgba(0, 0, 0, 0.904);
 }
@@ -27,14 +27,14 @@ background-color: rgba(0, 0, 0, 0.904);
     border: 2px solid rgba(255, 255, 255, 0.311);
     box-shadow: 0px 0px 30px rgba(199, 199, 0, 0.9);
     display: flex;
-    justify-content: center; /*horizontally center*/
-    align-items: center; /* vertically center*/
+    justify-content: center; 
+    align-items: center; 
 }
 
 .clock span{
     position: absolute;
-    transform: rotate(calc(30deg * var(--i)));  /*calc is inbuilt function which calculate the value*/
-                                     /*circle 360/ hours 12=30 rotation*/
+    transform: rotate(calc(30deg * var(--i)));  
+                                    
     inset: 12px;
     text-align: center;
 
@@ -46,14 +46,14 @@ background-color: rgba(0, 0, 0, 0.904);
     font-size: 20px;
 }
 
-.clock::before{  /* madhala dot sathi*/ 
+.clock::before{  
 content: '';
 position: absolute;
 width: 8px;
 height: 8px;
 border-radius: 50%;
 background-color: rgba(255, 255, 255, 0.845);
-z-index: 2;  /*default 1 asto center madhe yenyasathi 2 kela*/
+z-index: 2;  
 }
 
 .hand{
